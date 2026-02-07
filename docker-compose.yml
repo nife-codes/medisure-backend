@@ -1,15 +1,15 @@
+version: '3.8'
+
 services:
   backend:
     build:
       context: .
       dockerfile: Dockerfile
-      # Force the container to use Google DNS to avoid Exit Code 100
-      dns:
-        - 8.8.8.8
-        - 1.1.1.1
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
     container_name: medisure_backend
     volumes:
-      #  points 50GB disk path
       - /data/projects/medisure_db:/app/db_data
     ports:
       - "8000:8000"

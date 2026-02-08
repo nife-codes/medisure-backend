@@ -90,7 +90,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://medisure.health",
+    "https://medisure.health",
+    "http://www.medisure.health",
+    "https://www.medisure.health",
+    "http://localhost:3000",
+    "http://localhost:5173",
+]
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

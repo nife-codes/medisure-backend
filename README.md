@@ -4,7 +4,7 @@ Django REST API for the MediSure medicine track-and-trace system on Cardano.
 
 ## Live Deployment
 
-**Backend API:** https://medisure-backend-t5yr.onrender.com/api/
+**[Backend API:] (https://medisure-backend-t5yr.onrender.com/api/)**
 
 ## Local Setup
 
